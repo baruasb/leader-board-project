@@ -11,7 +11,8 @@ body{
 /*top player style*/
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .title{
     color: blue;
@@ -22,6 +23,8 @@ main{
     background-color: white;
     width: 870px;
     padding: 30px ;
+    margin-top: 20px;
+    border-radius: 10px;
     
 }
 
@@ -85,4 +88,31 @@ hr{
 .blog-author a{
     text-decoration: none;
     font-size: 16px;
+}
+
+/* courses part */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+
+.course-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star.filled{
+    color: gold;
+}
+
+.fa-star.empty{
+    color: gainsboro;
 }
